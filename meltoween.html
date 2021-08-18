@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MELTOWEEN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--CSS SCript  -->
+           <style>
+           
+           *{margin:0; padding:0;}
+
+           /* Green Block style */
+           .green{
+                background-color:#8eb832;
+                width: 850px;
+                height:470px;
+                margin-top: -0.5px;
+            }
+
+            .what{
+                color:#462856; 
+                font-weight:bold;
+                margin-top: -5px;
+                margin-left:30px;
+                font-size:20px;
+            }
+
+            #heading{
+                font-size:40px;
+                color:#ffffff;
+            }
+
+
+            td {
+                color:#ffffff;
+                border: 0px solid #dddddd;
+                float:inline-start;
+                text-align: left;
+                padding:10px 80px;
+                font-size: 20px;
+                 padding-left:30px;
+                
+            }
+
+            th{
+                color:#462856;
+                border: 0px solid #dddddd;
+                float:inline-start;
+                text-align: left;
+                padding: 10px 80px;
+                font-size: 20px;
+                padding-left: 30px;
+                
+                }
+
+                /* Black Block Style */
+
+            .black{
+                background-color: #373737;
+                width: 800px;
+                height:120px;
+                color:#ff821d;
+                margin-top:0.5px; 
+                padding:10px 30px 30px 20px; 
+                font-size: 25px; 
+                padding-left:20px;
+                text-align: justify;
+            }  
+
+            /* Light orange Block Style */
+            .orange1{
+                background-color: #ff821d;
+                width: 850px;
+                height:275px;
+                margin-top:-22px;
+            }   
+            
+            .orange1 h1{
+                color:#ffffff;
+                padding:20px;
+            }
+            
+            .orange1 p{
+                color:#ffffff;
+                font-size:20px;
+                padding:20px;
+            }
+            
+            .costume{
+                float:right;
+                margin-top:2px;
+
+            }
+
+            /* Medium Orange Block Style */
+            .orange2{
+                background-color: #e67112;
+                width: 850px;
+                height:290px;
+                margin-top:-20px;
+            } 
+
+            .orange2 h1{
+                color:#ffffff;
+                padding:30px;
+            }
+
+            .orange2 p{
+                color:#ffffff;
+                font-size:20px;
+                padding:10px 30px;
+            }
+
+            .cake{
+                float:right;
+                margin-top:2px;
+
+            }
+
+            /* Dark Orange Block Style */
+            .orange3{
+                background-color: #cd6511;
+                width: 850px;
+                height:300px;
+                margin-top:-3px;
+            } 
+            .orange3 h1{
+                color:#ffffff;
+                padding:30px;
+            }
+
+            .orange3 p{
+                color:#ffffff;
+                font-size:20px;
+                padding:10px 30px;
+            }
+
+            .kid{
+                float:right;
+                margin-top:2px;
+
+            }
+
+            /* Second Black Block Style */
+            .black2{
+                background-color: #000000;
+                max-width: 850px;
+                height:360px;
+                margin-top:-60px;
+            } 
+
+            .black2 h1{
+                color:#ffffff;
+                padding:30px;
+            }
+
+            .black2 p{
+                color:#ffffff;
+                font-size:20px;
+                padding:30px;
+            }
+
+
+            .movie{
+                float:right;
+                margin-top:-380px;
+                height: 430px;
+                }
+
+                /* RSVP Image Style */
+                .rsvp{
+                display:flex;
+                width:900px;
+                margin-top: -80px;
+                height:200px;
+            }
+            .rsvp .left{
+                display: flex;
+                flex-direction: row;
+                height:auto;
+                
+            }  
+            .rsvp .right{
+                float: right;
+                height:auto;
+                width:360px;
+            }
+
+     /*Media Query for Mobile View*/
+     @media screen and (max-width:500px) {
+        
+        /* Light Orange Block style */
+          .orange1 {
+              display:block;
+              height:435px;
+          }
+          .orange1 h1{
+              width:100%;
+              margin-bottom: 30px;
+          }
+         .orange1 p{
+             width:100%;
+             margin-top: -65px;
+           
+                     }
+         .orange1 .costume{
+             width:50%;
+             height: auto;
+             margin-right: 200px;
+             margin-top: 30px;
+             
+         }
+
+         /* Medium orange Block Style */
+         .orange2 {
+              display:block;
+              height:452px;
+          }
+
+         .orange2 h1{
+              width:100%;
+              margin-bottom: 40px;
+          }
+         .orange2 p{
+             width:900px;
+             margin-top: -65px;
+           
+                     }
+         .orange2 .cake{
+             width:20%;
+             height: auto;
+             margin-right: 300px;
+             margin-top: 80px;
+             
+         }
+     
+         /* Dark Orange Block Style */
+         .orange3 {
+              display:block;
+              height:452px;
+          }
+
+         .orange3 h1{
+              width:100%;
+              margin-bottom: 60px;
+          }
+         .orange3 p{
+             width:900px;
+             margin-top: -65px;
+            
+                     }
+         .orange3 .kid{
+             width:20%;
+             height: auto;
+             margin-right: 300px;
+             margin-top: 20px;
+             
+         }
+
+         .black2 {
+              display:block;
+              height:452px;
+          }
+
+          /* Black Block Style */
+         .black2 h1{
+              width:100%;
+              margin-bottom: 60px;
+          }
+         .black2 p{
+             width:900px;
+             margin-top: -65px;
+            
+                     }
+         .black2 .movie{
+             width:100%;
+             height: 355px;
+             margin-left: -500px;
+             margin-right: -350px;
+             margin-top: -175px;
+             
+         }
+        
+     }
+        </style>
+    </head>
+
+   <!-- HTML  -->
+    <body>
+        <div>
+            <img src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/banner.png" alt="banner" style="width:850px"/>
+        </div>
+        <div class="green">
+            <p class="what">WHAT!<br/>
+            <span id="heading">7th Annual Meltoween Party!</span></p>
+            <table class="table">
+                <tr>
+                  <th>WHEN:</th>
+                  <th class="th">FOOD:</th>
+                    </tr>
+                <tr>
+                <tr>
+                                  <td>Thursady, October 29th</td>
+                                  <td class="td">Spinato's Pizza & Salad & Pumpkin Foods?</td>
+                              </tr>
+                
+                <tr>
+                  <th>TIME:</th>
+                  <th>WHO:</th>
+                    </tr>
+                    <tr>
+                              <td>5pm (till whenever)</td>
+                              <td class="td">meltfolks + significant other +/- kids</td>
+                          </tr> 
+                  <tr>
+                  <th>WHERE:</th>
+                  <th>ATTIRE:</th>
+                    </tr> 
+                    <tr>
+                              <td>meltEast</td>
+                              <td>Costumes of course (prefferred, but not required)</td>
+                          </tr>
+                </table>
+              
+        </p>
+    </div>
+
+    <div class="black">
+        <p><span style=font-size:30px;color:#ff821d;padding-left:20px;>Plan Ahead!</span><span style=color:#ff821d>this event starts at 5pm.</span><span style=color:#ffffff>If you need time to get in costume or pickup your family or both etc.then you should consider flexing for half of the day. First check with your supervisor for approval.</span></p>
+    </div>
+
+    <div class="orange1">
+        <h1>Costume Contest</h1>
+        <img class="costume" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/costumes.png" alt="costumes"/>
+        <p>Duhh, of course - Wear it all day if you wanna. Perhaps you will be the winner of the contest?(must be present at party to be voted on)We'll hold a kid contest too!</p>
+        </div>
+
+        <div class="orange2">
+            <h1>Pumpkin Flavored Bake Off</h1>
+            <img class="cake" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/cupcake.png" alt="cupcake"/>
+            <p>Only requirement is that pumpkin is used. So bring a dessert or savory dish to be enjoyed(then judged).There will be several categories you could win...ie: best dessert, best savory dish, best presentation, most unique...perhaps a few others.So be creative!(We'll make sure there is room in the fridges to store your items till party time...so MPR, no nibbling!)</p>
+            </div>
+
+            <div class="orange3">
+                <h1>Fun for the whole family!</h1>
+                <img class="kid" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/rockstar-kid.png" alt="rockstar-kid"/>
+                <p>Coloring Contest, Pumpkin Bowling, Spider Hide and Seek,Donut/Scooter Races, & More...</p>
+                <p>Don't forget there's melt Corn Hole & the fun Photo Booth too.</p>
+                </div>   
+
+           <div class="black2"> 
+            <h1>The Featured Movie</h1>
+            <p >Nightmare Before Christmas</p>
+            <img class="movie" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/movie.png" alt="movie"/>
+            </div> 
+            
+            <div class="rsvp">
+                <img class="left"src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/left.png" alt="Left-image" style="margin-right:-10px; margin-top:-3px;"/>
+                <img src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/rsvp.png" alt="RSVP;"/>
+                <img class="right"src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/right.png" alt="Right-image" style="margin:-20px 50px -0.5px -4px;">
+            </div>
+
+            <div>
+                <img src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/footer.png" alt="Footer" style="margin-top:-10px;width:850px;"/>
+            </div>
+     </body>
+</html>
