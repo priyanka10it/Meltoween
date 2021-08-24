@@ -69,7 +69,7 @@
                 text-align: justify;
                 box-sizing: border-box;
                 display: flex;
-                align-items:center;
+                flex-direction: row;
             }  
 
             /* Light orange Block Style */
@@ -77,24 +77,29 @@
                 background-color: #ff821d;
                 width: 850px;
                 height:270px;
-                margin-top:-22px;
+                margin-top:-10px;
                                
             }   
             
             .orange1 h1{
                 color:#ffffff;
                 padding:20px;
+                display: flex;
+                flex-direction: row;
             }
             
             .orange1 p{
                 color:#ffffff;
                 font-size:20px;
                 padding:20px;
+                display: flex;
+                flex-direction: row-reverse;
             }
             
             .costume{
                 display: float;
                 float: right;
+               
             }
 
             /* Medium Orange Block Style */
@@ -108,12 +113,16 @@
             .orange2 h1{
                 color:#ffffff;
                 padding:30px;
+                display: flex;
+                flex-direction: row;
             }
 
             .orange2 p{
                 color:#ffffff;
                 font-size:20px;
                 padding:10px 30px;
+                display: flex;
+                flex-direction: row-reverse;
             }
 
             .cake{
@@ -132,12 +141,16 @@
             .orange3 h1{
                 color:#ffffff;
                 padding:30px;
+                display: flex;
+                flex-direction: row;
             }
 
             .orange3 p{
                 color:#ffffff;
                 font-size:20px;
                 padding:10px 30px;
+                display: flex;
+                flex-direction: row;
             }
 
             .kid{
@@ -158,18 +171,22 @@
             .black2 h1{
                 color:#ffffff;
                 padding:30px;
+                display: flex;
+                flex-direction: row;
             }
 
             .black2 p{
                 color:#ffffff;
                 font-size:20px;
                 padding:30px;
+                display: flex;
+                flex-direction: row;
             }
 
 
              .movie{
                 float:right;
-                margin-top:-100px;
+                margin-top: -170px;
                 height: 430px;
                 } 
 
@@ -183,18 +200,19 @@
             }
             .rsvp .left{
                 display: flex;
-                flex-direction: row;
-                height:auto;
+                justify-content: flex-start;
+                width:392px;
                 
             } 
             
             .rsvp .middle{
-                margin-left: -5px;
-            }
+                display: flex;
+                justify-content: center;
+                            }
             .rsvp .right{
-                float: right;
-                height:auto;
-                width:850px;
+                display: flex;
+                justify-content: flex-end;
+                width:380px;
             } 
 
      /*Media Query for Mobile View*/
